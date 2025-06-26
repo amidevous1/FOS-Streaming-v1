@@ -37,55 +37,68 @@ fosstreamingexist() {
 
 # FUNCTION: Packages Install
 packages_install(){
-    apt-get update >/dev/null 2>&1
+    echo "update"
+    apt-get -qq update >/dev/null 2>&1
     sudo add-apt-repository ppa:maxmind/ppa -y >/dev/null 2>&1
-    sudo apt-get update >/dev/null 2>&1
-    sudo apt-get -y dist-upgrade >/dev/null 2>&1
-    sudo apt-get install -y libgd-dev >/dev/null 2>&1
-    sudo apt-get install -y libxslt-dev >/dev/null 2>&1
-    sudo apt-get install -y libgeoip-dev >/dev/null 2>&1
-    sudo apt-get install -y tar >/dev/null 2>&1
-    sudo apt-get install -y wget >/dev/null 2>&1
-    sudo apt-get install -y libmaxminddb-dev >/dev/null 2>&1
-    sudo apt-get install -y git >/dev/null 2>&1
-    sudo apt-get install -y curl >/dev/null 2>&1
-    sudo apt-get install -y libxml2-dev >/dev/null 2>&1
-    sudo apt-get install -y libbz2-dev >/dev/null 2>&1
-    sudo apt-get install -y libcurl4-openssl-dev >/dev/null 2>&1
-    sudo apt-get install -y libmcrypt-dev >/dev/null 2>&1
-    sudo apt-get install -y libmhash2 >/dev/null 2>&1
-    sudo apt-get install -y libmhash-dev >/dev/null 2>&1
-    sudo apt-get install -y libpcre3 >/dev/null 2>&1
-    sudo apt-get install -y libpcre3-dev >/dev/null 2>&1
-    sudo apt-get install -y make >/dev/null 2>&1
-    sudo apt-get install -y build-essential >/dev/null 2>&1
-    sudo apt-get install -y libxslt1-dev >/dev/null 2>&1
-    sudo apt-get install -y unzip >/dev/null 2>&1
-    sudo apt-get install -y python-software-properties >/dev/null 2>&1
-    sudo apt-get install -y software-properties-common >/dev/null 2>&1
-    sudo apt-get install -y libpopt0 >/dev/null 2>&1
-    sudo apt-get install -y libpq-dev >/dev/null 2>&1
-    sudo apt-get install -y libpq5 >/dev/null 2>&1
-    sudo apt-get install -y libpspell-dev >/dev/null 2>&1
-    sudo apt-get install -y libpthread-stubs0-dev >/dev/null 2>&1
-    sudo apt-get install -y libpython-stdlib >/dev/null 2>&1
-    sudo apt-get install -y libqdbm-dev >/dev/null 2>&1
-    sudo apt-get install -y libqdbm14 >/dev/null 2>&1
-    sudo apt-get install -y libquadmath0 >/dev/null 2>&1
-    sudo apt-get install -y librecode-dev >/dev/null 2>&1
-    sudo apt-get install -y librecode0 >/dev/null 2>&1
-    sudo apt-get install -y librtmp-dev >/dev/null 2>&1
-    sudo apt-get install -y librtmp0 >/dev/null 2>&1
-    sudo apt-get install -y libsasl2-dev >/dev/null 2>&1
-    sudo apt-get install -y libsasl2-modules
-    sudo apt-get install -y libsctp-dev >/dev/null 2>&1
-    sudo apt-get install -y libsctp1 >/dev/null 2>&1
-    sudo apt-get install -y libsensors4 >/dev/null 2>&1
-    sudo apt-get install -y libsensors4-dev >/dev/null 2>&1
-    sudo apt-get install -y libsm-dev >/dev/null 2>&1
-    sudo apt-get install -y libsm6 >/dev/null 2>&1
-    sudo apt-get install -y libsnmp-base >/dev/null 2>&1
-    sudo apt-get install -y libsnmp-dev >/dev/null 2>&1
+    sudo apt-get -qq update >/dev/null 2>&1
+    sudo rm -rf /tmp/* >/dev/null 2>&1
+    echo "upgrade"
+    sudo apt-get -yqq dist-upgrade >/dev/null 2>&1
+    echo "install libgd-dev"
+    sudo apt-get install -yqq libgd-dev >/dev/null 2>&1
+    echo "install libxslt-dev"
+    sudo apt-get install -yqq libxslt-dev >/dev/null 2>&1
+    echo "install libgeoip-dev"
+    sudo apt-get install -yqq libgeoip-dev >/dev/null 2>&1
+    echo "install tar"
+    sudo apt-get install -yqq tar >/dev/null 2>&1
+    echo "install wget"
+    sudo apt-get install -yqq wget >/dev/null 2>&1
+    echo "install libmaxminddb-dev"
+    sudo apt-get install -yqq libmaxminddb-dev >/dev/null 2>&1
+    echo "install git"
+    sudo apt-get install -yqq git >/dev/null 2>&1
+    echo "install curl"
+    sudo apt-get install -yqq curl >/dev/null 2>&1
+    echo "install libxml2-dev"
+    sudo apt-get install -yqq libxml2-dev >/dev/null 2>&1
+    echo "install libbz2-dev"
+    sudo apt-get install -yqq libbz2-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libcurl4-openssl-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libmcrypt-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libmhash2 >/dev/null 2>&1
+    sudo apt-get install -yqq libmhash-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libpcre3 >/dev/null 2>&1
+    sudo apt-get install -yqq libpcre3-dev >/dev/null 2>&1
+    sudo apt-get install -yqq make >/dev/null 2>&1
+    sudo apt-get install -yqq build-essential >/dev/null 2>&1
+    sudo apt-get install -yqq libxslt1-dev >/dev/null 2>&1
+    sudo apt-get install -yqq unzip >/dev/null 2>&1
+    sudo apt-get install -yqq python-software-properties >/dev/null 2>&1
+    sudo apt-get install -yqq software-properties-common >/dev/null 2>&1
+    sudo apt-get install -yqq libpopt0 >/dev/null 2>&1
+    sudo apt-get install -yqq libpq-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libpq5 >/dev/null 2>&1
+    sudo apt-get install -yqq libpspell-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libpthread-stubs0-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libpython-stdlib >/dev/null 2>&1
+    sudo apt-get install -yqq libqdbm-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libqdbm14 >/dev/null 2>&1
+    sudo apt-get install -yqq libquadmath0 >/dev/null 2>&1
+    sudo apt-get install -yqq librecode-dev >/dev/null 2>&1
+    sudo apt-get install -yqq librecode0 >/dev/null 2>&1
+    sudo apt-get install -yqq librtmp-dev >/dev/null 2>&1
+    sudo apt-get install -yqq librtmp0 >/dev/null 2>&1
+    sudo apt-get install -yqq libsasl2-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libsasl2-modules
+    sudo apt-get install -yqq libsctp-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libsctp1 >/dev/null 2>&1
+    sudo apt-get install -yqq libsensors4 >/dev/null 2>&1
+    sudo apt-get install -yqq libsensors4-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libsm-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libsm6 >/dev/null 2>&1
+    sudo apt-get install -yqq libsnmp-base >/dev/null 2>&1
+    sudo apt-get install -yqq libsnmp-dev >/dev/null 2>&1
     sudo apt-get install -y libsnmp-perl >/dev/null 2>&1
     sudo apt-get install -y libsnmp30 >/dev/null 2>&1
     sudo apt-get install -y libsqlite3-dev >/dev/null 2>&1
@@ -121,7 +134,6 @@ packages_install(){
     sudo apt-get install -y libxdmcp-dev >/dev/null 2>&1
     sudo apt-get install -y libxdmcp6 >/dev/null 2>&1
     sudo apt-get install -y libxml2 >/dev/null 2>&1
-    sudo apt-get install -y libxml2-dev >/dev/null 2>&1
     sudo apt-get install -y libxmltok1 >/dev/null 2>&1
     sudo apt-get install -y libxmltok1-dev >/dev/null 2>&1
     sudo apt-get install -y libxpm-dev >/dev/null 2>&1
@@ -196,7 +208,6 @@ packages_install(){
     sudo apt-get install -y libfreetype6-dev >/dev/null 2>&1
     sudo apt-get install -y libgcrypt20-dev >/dev/null 2>&1
     sudo apt-get install -y libgcrypt11-dev >/dev/null 2>&1
-    sudo apt-get install -y libgd-dev >/dev/null 2>&1
     sudo apt-get install -y libgd2-dev >/dev/null 2>&1
     sudo apt-get install -y libglib2.0-dev >/dev/null 2>&1
     sudo apt-get install -y libgmp3-dev >/dev/null 2>&1
@@ -226,7 +237,6 @@ packages_install(){
     sudo apt-get install -y libtool >/dev/null 2>&1
     sudo apt-get install -y libwebp-dev >/dev/null 2>&1
     sudo apt-get install -y libwrap0-dev >/dev/null 2>&1
-    sudo apt-get install -y libxml2-dev >/dev/null 2>&1
     sudo apt-get install -y libxmlrpc-epi-dev >/dev/null 2>&1
     sudo apt-get install -y libxmltok1-dev >/dev/null 2>&1
     sudo apt-get install -y libxslt1-dev >/dev/null 2>&1
@@ -241,10 +251,8 @@ packages_install(){
     sudo apt-get install -y zlib1g-dev >/dev/null 2>&1
     sudo apt-get install -y libcurl4 >/dev/null 2>&1
     sudo apt-get install -y libxslt1-dev >/dev/null 2>&1
-    sudo apt-get install -y libgeoip-dev >/dev/null 2>&1
     sudo apt-get install -y libonig-dev >/dev/null 2>&1
     sudo apt-get install -y e2fsprogs >/dev/null 2>&1
-    sudo apt-get install -y wget >/dev/null 2>&1
     sudo apt-get install -y mcrypt >/dev/null 2>&1
     sudo apt-get install -y nscd >/dev/null 2>&1
     sudo apt-get install -y htop >/dev/null 2>&1
@@ -264,8 +272,6 @@ packages_install(){
     sudo apt-get install -y libc6-dev >/dev/null 2>&1
     sudo apt-get install -y libbz2-dev >/dev/null 2>&1
     sudo apt-get install -y libffi-dev >/dev/null 2>&1
-    sudo apt-get install -y wget >/dev/null 2>&1
-    sudo apt-get install -y tar >/dev/null 2>&1
     cd /tmp
 	sudo wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz > /dev/null 2>&1
 	sudo tar xzf Python-2.7.18.tgz > /dev/null 2>&1
