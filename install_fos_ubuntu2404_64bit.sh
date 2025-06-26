@@ -64,18 +64,30 @@ packages_install(){
     sudo apt-get install -yqq libxml2-dev >/dev/null 2>&1
     echo "install libbz2-dev"
     sudo apt-get install -yqq libbz2-dev >/dev/null 2>&1
+    echo "install libcurl4-openssl-dev"
     sudo apt-get install -yqq libcurl4-openssl-dev >/dev/null 2>&1
+    echo "install libmcrypt-dev"
     sudo apt-get install -yqq libmcrypt-dev >/dev/null 2>&1
+    echo "install libmhash2"
     sudo apt-get install -yqq libmhash2 >/dev/null 2>&1
+    echo "install libmhash-dev"
     sudo apt-get install -yqq libmhash-dev >/dev/null 2>&1
+    echo "install libmhash-dev"
+    echo "install libpcre3"
     sudo apt-get install -yqq libpcre3 >/dev/null 2>&1
+    echo "install libpcre3-dev"
     sudo apt-get install -yqq libpcre3-dev >/dev/null 2>&1
+    echo "install make"
     sudo apt-get install -yqq make >/dev/null 2>&1
+    echo "install build-essential"
     sudo apt-get install -yqq build-essential >/dev/null 2>&1
+    echo "install libxslt1-dev"
     sudo apt-get install -yqq libxslt1-dev >/dev/null 2>&1
+    echo "install unzip"
     sudo apt-get install -yqq unzip >/dev/null 2>&1
-    sudo apt-get install -yqq python-software-properties >/dev/null 2>&1
+    echo "install software-properties-common"
     sudo apt-get install -yqq software-properties-common >/dev/null 2>&1
+    echo "install libpopt0"
     sudo apt-get install -yqq libpopt0 >/dev/null 2>&1
     sudo apt-get install -yqq libpq-dev >/dev/null 2>&1
     sudo apt-get install -yqq libpq5 >/dev/null 2>&1
@@ -99,55 +111,53 @@ packages_install(){
     sudo apt-get install -yqq libsm6 >/dev/null 2>&1
     sudo apt-get install -yqq libsnmp-base >/dev/null 2>&1
     sudo apt-get install -yqq libsnmp-dev >/dev/null 2>&1
-    sudo apt-get install -y libsnmp-perl >/dev/null 2>&1
-    sudo apt-get install -y libsnmp30 >/dev/null 2>&1
-    sudo apt-get install -y libsqlite3-dev >/dev/null 2>&1
-    sudo apt-get install -y libssh2-1 >/dev/null 2>&1
-    sudo apt-get install -y libssh2-1-dev >/dev/null 2>&1
-    sudo apt-get install -y libssl-dev >/dev/null 2>&1
-    sudo apt-get install -y libstdc++-4.8-dev >/dev/null 2>&1
-    sudo apt-get install -y libstdc++6-4.7-dev >/dev/null 2>&1
-    sudo apt-get install -y libsybdb5 >/dev/null 2>&1
-    sudo apt-get install -y libtasn1-3-dev >/dev/null 2>&1
-    sudo apt-get install -y libtasn1-6-dev >/dev/null 2>&1
-    sudo apt-get install -y libterm-readkey-perl >/dev/null 2>&1
-    sudo apt-get install -y libtidy-0.99-0 >/dev/null 2>&1
-    sudo apt-get install -y libtidy-dev >/dev/null 2>&1
-    sudo apt-get install -y libtiff5 >/dev/null 2>&1
-    sudo apt-get install -y libtiff5-dev >/dev/null 2>&1
-    sudo apt-get install -y libtiffxx5 >/dev/null 2>&1
-    sudo apt-get install -y libtimedate-perl >/dev/null 2>&1
-    sudo apt-get install -y libtinfo-dev >/dev/null 2>&1
-    sudo apt-get install -y libtool >/dev/null 2>&1
-    sudo apt-get install -y libtsan0 >/dev/null 2>&1
-    sudo apt-get install -y libunistring0 >/dev/null 2>&1
-    sudo apt-get install -y libvpx-dev >/dev/null 2>&1
-    sudo apt-get install -y libvpx1 >/dev/null 2>&1
-    sudo apt-get install -y libwrap0-dev >/dev/null 2>&1
-    sudo apt-get install -y libx11-6 >/dev/null 2>&1
-    sudo apt-get install -y libx11-data >/dev/null 2>&1
-    sudo apt-get install -y libx11-dev >/dev/null 2>&1
-    sudo apt-get install -y libxau-dev >/dev/null 2>&1
-    sudo apt-get install -y libxau6 >/dev/null 2>&1
-    sudo apt-get install -y libxcb1 >/dev/null 2>&1
-    sudo apt-get install -y libxcb1-dev >/dev/null 2>&1
-    sudo apt-get install -y libxdmcp-dev >/dev/null 2>&1
-    sudo apt-get install -y libxdmcp6 >/dev/null 2>&1
-    sudo apt-get install -y libxml2 >/dev/null 2>&1
-    sudo apt-get install -y libxmltok1 >/dev/null 2>&1
-    sudo apt-get install -y libxmltok1-dev >/dev/null 2>&1
-    sudo apt-get install -y libxpm-dev >/dev/null 2>&1
-    sudo apt-get install -y libxpm4 >/dev/null 2>&1
-    sudo apt-get install -y libxslt1-dev >/dev/null 2>&1
-    sudo apt-get install -y libxslt1.1 >/dev/null 2>&1
-    sudo apt-get install -y libxt-dev >/dev/null 2>&1
-    sudo apt-get install -y libxt6 >/dev/null 2>&1
-    sudo apt-get install -y linux-libc-dev >/dev/null 2>&1
-    sudo apt-get install -y m4 >/dev/null 2>&1
-    sudo apt-get install -y make >/dev/null 2>&1
-    sudo apt-get install -y man-db
-    sudo apt-get install -y netcat-openbsd >/dev/null 2>&1
-    sudo apt-get install -y odbcinst1debian2 >/dev/null 2>&1
+    sudo apt-get install -yqq libsnmp-perl >/dev/null 2>&1
+    sudo apt-get install -yqq libsnmp30 >/dev/null 2>&1
+    sudo apt-get install -yqq libsqlite3-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libssh2-1 >/dev/null 2>&1
+    sudo apt-get install -yqq libssh2-1-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libssl-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libstdc++-4.8-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libstdc++6-4.7-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libsybdb5 >/dev/null 2>&1
+    sudo apt-get install -yqq libtasn1-3-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libtasn1-6-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libterm-readkey-perl >/dev/null 2>&1
+    sudo apt-get install -yqq libtidy-0.99-0 >/dev/null 2>&1
+    sudo apt-get install -yqq libtidy-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libtiff5 >/dev/null 2>&1
+    sudo apt-get install -yqq libtiff5-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libtiffxx5 >/dev/null 2>&1
+    sudo apt-get install -yqq libtimedate-perl >/dev/null 2>&1
+    sudo apt-get install -yqq libtinfo-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libtool >/dev/null 2>&1
+    sudo apt-get install -yqq libtsan0 >/dev/null 2>&1
+    sudo apt-get install -yqq libunistring0 >/dev/null 2>&1
+    sudo apt-get install -yqq libvpx-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libvpx1 >/dev/null 2>&1
+    sudo apt-get install -yqq libwrap0-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libx11-6 >/dev/null 2>&1
+    sudo apt-get install -yqq libx11-data >/dev/null 2>&1
+    sudo apt-get install --yqq libx11-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libxau-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libxau6 >/dev/null 2>&1
+    sudo apt-get install -yqq libxcb1 >/dev/null 2>&1
+    sudo apt-get install -yqq libxcb1-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libxdmcp-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libxdmcp6 >/dev/null 2>&1
+    sudo apt-get install -yqq libxml2 >/dev/null 2>&1
+    sudo apt-get install -yqq libxmltok1 >/dev/null 2>&1
+    sudo apt-get install -yqq libxmltok1-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libxpm-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libxpm4 >/dev/null 2>&1
+    sudo apt-get install -yqq libxslt1.1 >/dev/null 2>&1
+    sudo apt-get install -yqq libxt-dev >/dev/null 2>&1
+    sudo apt-get install -yqq libxt6 >/dev/null 2>&1
+    sudo apt-get install -yqq linux-libc-dev >/dev/null 2>&1
+    sudo apt-get install -yqq m4 >/dev/null 2>&1
+    sudo apt-get install -yqq man-db
+    sudo apt-get install -yqq netcat-openbsd >/dev/null 2>&1
+    sudo apt-get install -yqq odbcinst1debian2 >/dev/null 2>&1
     sudo apt-get install -y openssl >/dev/null 2>&1
     sudo apt-get install -y patch >/dev/null 2>&1
     sudo apt-get install -y pkg-config >/dev/null 2>&1
@@ -195,9 +205,8 @@ packages_install(){
     sudo apt-get install -y libacl1-dev >/dev/null 2>&1
     sudo apt-get install -y libapparmor-dev >/dev/null 2>&1
     sudo apt-get install -y libapr1-dev >/dev/null 2>&1
-    sudo apt-get install -y libbz2-dev >/dev/null 2>&1
+    sudo apt-get install -y 
     sudo apt-get install -y libc-client-dev >/dev/null 2>&1
-    sudo apt-get install -y libcurl4-openssl-dev >/dev/null 2>&1
     sudo apt-get install -y libcurl-dev >/dev/null 2>&1
     sudo apt-get install -y libdb-dev >/dev/null 2>&1
     sudo apt-get install -y libedit-dev >/dev/null 2>&1
@@ -217,12 +226,9 @@ packages_install(){
     sudo apt-get install -y libkrb5-dev >/dev/null 2>&1
     sudo apt-get install -y libldap2-dev >/dev/null 2>&1
     sudo apt-get install -y libmagic-dev >/dev/null 2>&1
-    sudo apt-get install -y libmcrypt-dev >/dev/null 2>&1
-    sudo apt-get install -y libmhash-dev >/dev/null 2>&1
     sudo apt-get install -y libnss-myhostname >/dev/null 2>&1
     sudo apt-get install -y libonig-dev >/dev/null 2>&1
     sudo apt-get install -y libpam0g-dev >/dev/null 2>&1
-    sudo apt-get install -y libpcre3-dev >/dev/null 2>&1
     sudo apt-get install -y libpng-dev >/dev/null 2>&1
     sudo apt-get install -y libpq-dev >/dev/null 2>&1
     sudo apt-get install -y libpspell-dev >/dev/null 2>&1
@@ -239,7 +245,6 @@ packages_install(){
     sudo apt-get install -y libwrap0-dev >/dev/null 2>&1
     sudo apt-get install -y libxmlrpc-epi-dev >/dev/null 2>&1
     sudo apt-get install -y libxmltok1-dev >/dev/null 2>&1
-    sudo apt-get install -y libxslt1-dev >/dev/null 2>&1
     sudo apt-get install -y libzip-dev >/dev/null 2>&1
     sudo apt-get install -y locales-all >/dev/null 2>&1
     sudo apt-get install -y netbase >/dev/null 2>&1
@@ -250,19 +255,16 @@ packages_install(){
     sudo apt-get install -y unixodbc-dev >/dev/null 2>&1
     sudo apt-get install -y zlib1g-dev >/dev/null 2>&1
     sudo apt-get install -y libcurl4 >/dev/null 2>&1
-    sudo apt-get install -y libxslt1-dev >/dev/null 2>&1
     sudo apt-get install -y libonig-dev >/dev/null 2>&1
     sudo apt-get install -y e2fsprogs >/dev/null 2>&1
     sudo apt-get install -y mcrypt >/dev/null 2>&1
     sudo apt-get install -y nscd >/dev/null 2>&1
     sudo apt-get install -y htop >/dev/null 2>&1
     sudo apt-get install -y zip >/dev/null 2>&1
-    sudo apt-get install -y unzip >/dev/null 2>&1
     sudo apt-get install -y mc >/dev/null 2>&1
     sudo apt-get install -y libpng16-16 >/dev/null 2>&1
     sudo apt-get install -y python3-paramiko >/dev/null 2>&1
     sudo apt-get install -y python-is-python3 >/dev/null 2>&1
-    sudo apt-get install -y build-essential >/dev/null 2>&1
     sudo apt-get install -y checkinstall >/dev/null 2>&1
     sudo apt-get install -y libncursesw5-dev >/dev/null 2>&1
     sudo apt-get install -y libssl-dev >/dev/null 2>&1
@@ -270,7 +272,6 @@ packages_install(){
     sudo apt-get install -y tk-dev >/dev/null 2>&1
     sudo apt-get install -y libgdbm-dev >/dev/null 2>&1
     sudo apt-get install -y libc6-dev >/dev/null 2>&1
-    sudo apt-get install -y libbz2-dev >/dev/null 2>&1
     sudo apt-get install -y libffi-dev >/dev/null 2>&1
     cd /tmp
 	sudo wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz > /dev/null 2>&1
@@ -648,12 +649,14 @@ debconf-set-selections <<< 'mysql-apt-config mysql-apt-config/unsupported-platfo
 wget http://dev.mysql.com/get/mysql-apt-config_0.7.2-1_all.deb
 DEBIAN_FRONTEND=noninteractive sudo DEBIAN_FRONTEND=noninteractive dpkg -i mysql-apt-config_0.7.2-1_all.deb
 sudo rm -f /etc/apt/sources.list.d/mysql.list
-echo "### THIS FILE IS AUTOMATICALLY CONFIGURED ###" | sudo tee /etc/apt/sources.list.d/mysql.list
-echo "# You may comment out entries below, but any other modifications may be lost." | sudo tee /etc/apt/sources.list.d/mysql.list
-echo "# Use command 'dpkg-reconfigure mysql-apt-config' as root for modifications." | sudo tee /etc/apt/sources.list.d/mysql.list
-echo "deb http://repo.mysql.com/apt/ubuntu/ trusty mysql-apt-config" | sudo tee /etc/apt/sources.list.d/mysql.list
-echo "deb http://repo.mysql.com/apt/ubuntu/ trusty mysql-5.7" | sudo tee /etc/apt/sources.list.d/mysql.list
-echo "deb-src http://repo.mysql.com/apt/ubuntu/ trusty mysql-5.7" | sudo tee /etc/apt/sources.list.d/mysql.list
+echo "### THIS FILE IS AUTOMATICALLY CONFIGURED ###" > /etc/apt/sources.list.d/mysql.list
+echo "# You may comment out entries below, but any other modifications may be lost." >> /etc/apt/sources.list.d/mysql.list
+echo "# Use command 'dpkg-reconfigure mysql-apt-config' as root for modifications." >> /etc/apt/sources.list.d/mysql.list
+echo "deb http://repo.mysql.com/apt/ubuntu/ trusty mysql-apt-config" >> /etc/apt/sources.list.d/mysql.list
+echo "deb http://repo.mysql.com/apt/ubuntu/ trusty mysql-5.7"  >> /etc/apt/sources.list.d/mysql.list
+echo "deb http://repo.mysql.com/apt/ubuntu/ trusty mysql-cluster-7.5 mysql-cluster-7.6 workbench-6.2 workbench-6.3 connector-python-2.0 connector-python-2.1 router-2.0 mysql-utilities-1.5 mysql-tools"  >> /etc/apt/sources.list.d/mysql.list
+echo "deb-src http://repo.mysql.com/apt/ubuntu/ trusty mysql-5.7"  >> /etc/apt/sources.list.d/mysql.list
+echo "deb-src http://repo.mysql.com/apt/ubuntu/ trusty mysql-cluster-7.5 mysql-cluster-7.6 workbench-6.2 workbench-6.3 connector-python-2.0 connector-python-2.1 router-2.0 mysql-utilities-1.5 mysql-tools" >> /etc/apt/sources.list.d/mysql.list
 cat > /usr/bin/add-apt-key <<EOG
 #!/bin/bash
 sudo rm -f "/etc/apt/trusted.gpg.d/\$1.gpg"
@@ -669,13 +672,12 @@ echo ""
 read -p "Choose your MySQL database name: " sqldatabase
 read -p "Enter your MySQL username(usual 'root'): " sqluname
 read -rep $'Enter your MySQL password (ENTER for none):' sqlpasswd
-echo "mysql-server mysql-serverm/root_password password mysql" | debconf-set-selections
+echo "mysql-server mysql-server/root_password password $sqlpasswd" | debconf-set-selections
 echo "mysql-server mysql-server/root_password_again password $sqlpasswd" | debconf-set-selections
-
-echo "mysql-community-server mysql-server/root_password password mysql" | debconf-set-selections
-echo "mysql-community-server/root_password_again password $sqlpasswd" | debconf-set-selections
-echo "mysql-community-server mysql-server/root_password password mysql" | debconf-set-selections
-echo "mysql-community-server/root_password_again password $sqlpasswd" | debconf-set-selections
+echo "mysql-community-server mysql-server/root_password password $sqlpasswd" | debconf-set-selections
+echo "mysql-community-server mysql-server/root_password_again password $sqlpasswd" | debconf-set-selections
+echo "mysql-community-server mysql-server/root_password password $sqlpasswd" | debconf-set-selections
+echo "mysql-community-server mysql-server/root_password_again password $sqlpasswd" | debconf-set-selections
 echo "phpmyadmin phpmyadmin/dbconfig-install boolean true" | debconf-set-selections
 echo "phpmyadmin phpmyadmin/app-password-confirm password $sqlpasswd" | debconf-set-selections
 echo "phpmyadmin phpmyadmin/mysql/admin-pass password $sqlpasswd" | debconf-set-selections
